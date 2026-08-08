@@ -1,0 +1,13 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.25",
+   "Default View_TopLeft":"-538,-168",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:24.0
+#  -string -flagsOSRD
+preplace portBus neuron_potential -pg 1 -lvl 0 -x -10 -y 10 -defaultsOSRD
+levelinfo -pg 1 -10 10
+pagesize -pg 1 -db -bbox -sgen -200 -20 10 40
+"
+}
+

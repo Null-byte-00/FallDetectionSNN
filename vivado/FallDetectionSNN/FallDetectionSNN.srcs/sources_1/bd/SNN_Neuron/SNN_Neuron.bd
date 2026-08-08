@@ -1,0 +1,22 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x8F37558C8F37558C",
+      "device": "xc7vx485tffg1157-1",
+      "gen_directory": "../../../../FallDetectionSNN.gen/sources_1/bd/SNN_Neuron",
+      "name": "SNN_Neuron",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2026.1"
+    },
+    "design_tree": {},
+    "ports": {
+      "neuron_potential": {
+        "type": "data",
+        "direction": "I",
+        "left": "8",
+        "right": "0"
+      }
+    }
+  }
+}
