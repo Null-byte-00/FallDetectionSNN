@@ -1,0 +1,23 @@
+Time resolution is 1 ps
+time=0 | reset=1 | input=   0 | membrane=   x | spike=x
+time=5000 | reset=1 | input=   0 | membrane=   0 | spike=0
+time=20000 | reset=0 | input=  15 | membrane=   0 | spike=0
+time=25000 | reset=0 | input=  15 | membrane=  15 | spike=0
+time=35000 | reset=0 | input=  15 | membrane=  30 | spike=0
+time=45000 | reset=0 | input=  15 | membrane=  45 | spike=0
+time=55000 | reset=0 | input=  15 | membrane=   0 | spike=1
+time=65000 | reset=0 | input=  15 | membrane=  15 | spike=0
+time=70000 | reset=0 | input=   0 | membrane=  15 | spike=0
+time=120000 | reset=0 | input=  40 | membrane=  15 | spike=0
+time=125000 | reset=0 | input=  40 | membrane=   0 | spike=1
+time=135000 | reset=0 | input=  40 | membrane=  40 | spike=0
+time=145000 | reset=0 | input=  40 | membrane=   0 | spike=1
+time=150000 | reset=0 | input= -10 | membrane=   0 | spike=1
+time=155000 | reset=0 | input= -10 | membrane= -10 | spike=0
+time=165000 | reset=0 | input= -10 | membrane= -20 | spike=0
+time=175000 | reset=0 | input= -10 | membrane= -30 | spike=0
+time=185000 | reset=0 | input= -10 | membrane= -40 | spike=0
+time=190000 | reset=1 | input= -10 | membrane= -40 | spike=0
+time=195000 | reset=1 | input= -10 | membrane=   0 | spike=0
+time=210000 | reset=0 | input=   0 | membrane=   0 | spike=0
+$finish called at time : 230 ns : File "C:/Users/sorou/OneDrive/Desktop/FallDetectionSNN/vivado/FallDetectionSNN/FallDetectionSNN.srcs/sim_1/new/single_neuon_simulation.v" Line 62

@@ -1,0 +1,7 @@
+Running: xsim.dir/single_neuron_simulation_behav/xsimk.exe -simmode gui -wdb single_neuron_simulation_behav.wdb -simrunnum 0 -socket 51431
+Design successfully loaded
+Design Loading Memory Usage: 19684 KB (Peak: 19684 KB)
+Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 20528 KB (Peak: 20528 KB)
+Simulation CPU Usage: 109 ms

@@ -20,26 +20,41 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module LIF_Neuron#(
-    parameter THRESHOLD = 8'sd50
-    )
-    (
-    input [7:0] input_current,
-    input clk,
-    output reg output_spike,
- 
-    reg signed [7:0] membrane_potential,
-    reg signed [7:0] sum
-    );
-    
+module LIF_Neuron #(
+    parameter signed [7:0] THRESHOLD = 8'sd50
+)(
+    input  wire signed [7:0] input_current,
+    input  wire              clk,
+    input  wire              reset,
+    output reg               output_spike
+);
+
+    reg signed [8:0] membrane_potential;
+    reg signed [8:0] next_membrane;
+
+    always @(*) begin
+        next_membrane =
+            membrane_potential + input_current;
+    end
+
     always @(posedge clk) begin
-        sum <= (input_current + membrane_potential);
-        membrane_potential <= sum;
-        if (membrane_potential >= THRESHOLD) begin
-            output_spike <= 1;
-            membrane_potential <= 8'sd0;
-        end else begin
-            output_spike <= 0;
+
+        if (reset) begin
+            membrane_potential <= 9'sd0;
+            output_spike       <= 1'b0;
+        end
+        else begin
+
+            if (next_membrane >= THRESHOLD) begin
+                output_spike       <= 1'b1;
+                membrane_potential <= 9'sd0;
+            end
+            else begin
+                output_spike       <= 1'b0;
+                membrane_potential <= next_membrane;
+            end
+
         end
     end
+
 endmodule
